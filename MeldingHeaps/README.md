@@ -1,1 +1,1 @@
-Binomial and leftist heaps implementation + test of them by comparing with a simple heap
+Binomial and leftist heaps implementation + test of them by comparison with a primitive heap
