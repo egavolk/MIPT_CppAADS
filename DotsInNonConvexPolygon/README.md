@@ -1,0 +1,1 @@
+Checks every of k vertices if it is on the border, inside or outside nonconvex polygon. Complexity is O((N + K)log(N + K))
