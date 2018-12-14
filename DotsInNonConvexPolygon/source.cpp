@@ -383,7 +383,8 @@ namespace ReadSolveWrite {
 	template <typename T>
 	bool operator<(const Event<T>& first, const Event<T>& second) {
 		if (first.event_type >= EET_VerticalSegmentEnd && second.event_type >= EET_VerticalSegmentEnd)
-			return Geom::LexicographicallyLess<T>(first.point, second.point) || first.point == second.point && first.event_type < second.event_type;
+			return Geom::LexicographicallyLess<T>(first.point, second.point) || first.point == second.point && 
+				first.event_type < second.event_type;
 		return first.point.x < second.point.x || first.point.x == second.point.x && first.event_type < second.event_type;
 	}
 
